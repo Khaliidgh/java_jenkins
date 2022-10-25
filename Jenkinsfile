@@ -8,6 +8,8 @@ node {
 }
     stage('run') {
         sh 'java affichage'
-
+}    
+    stage('clone') {
+        git 'https://github.com/Khaliidgh/java_jenkins.git'
 }
 }
